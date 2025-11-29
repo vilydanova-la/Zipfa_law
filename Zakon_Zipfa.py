@@ -2,7 +2,6 @@ import re
 from collections import Counter
 import matplotlib.pyplot as plt
 
-
 def analyze_zipf_optimized(filename: str, top_n: int | None = None) -> None:
  
     # 1. Читаем текст
@@ -78,3 +77,4 @@ if __name__ == "__main__":
 
     top_n = int(top_n_str) if top_n_str else None
     analyze_zipf_optimized(filename, top_n)
+
